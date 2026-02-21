@@ -7,6 +7,7 @@
 <meta name="description" content="Native australienne, 9 ans d'expérience. Cours d'anglais personnalisés pour professionnels, enfants et équipes à Colombes et La Défense. Première séance offerte.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
     <li role="none"><a href="#deblocage" role="menuitem">L'anglais qui libère</a></li>
     <li role="none"><a href="#formules" role="menuitem">Les formules</a></li>
     <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-    <li role="none"><a href="#formules" class="nav-cta" role="menuitem">Séance gratuite</a></li>
+    <li role="none"><a href="javascript:void(0)" class="nav-cta" role="menuitem" data-calendly-popup>Séance gratuite</a></li>
   </ul>
 
   <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -35,7 +36,7 @@
   <div class="hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
-      Native Australienne · Depuis 2016
+      Native Australienne · Enseignante depuis 2016
     </div>
 
     <h1 class="hero-title">
@@ -50,7 +51,7 @@
     </p>
 
     <div class="hero-ctas">
-      <a href="#formules" class="btn-primary">
+      <a href="javascript:void(0)" class="btn-primary" data-calendly-popup>
         Réserver ma séance gratuite
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 7.5h9M9 4l3.5 3.5L9 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -294,7 +295,7 @@
         Pas encore sûr(e) de la formule qui vous convient ?<br>
         <strong>La première séance est offerte</strong> — professionnel, équipe ou enfant, venez essayer sans engagement.
       </p>
-      <a href="#contact" class="btn-primary">
+      <a href="javascript:void(0)" class="btn-primary" data-calendly-popup>
         Réserver ma séance d'essai gratuite
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 7.5h9M9 4l3.5 3.5L9 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -336,6 +337,8 @@
   </div>
 </footer>
 
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 <script src="script.js"></script>
+<script src="calendly.js"></script>
 </body>
 </html>
