@@ -945,6 +945,9 @@ footer::before {
   .formule-card.featured { transform: none; }
   .formule-card.featured:hover { transform: translateY(-6px); }
 
+  .essai-banner { padding: 24px 20px; }
+  .essai-banner .btn-primary { width: 100%; justify-content: center; }
+
   footer { padding: 48px 24px 32px; }
   .footer-top { grid-template-columns: 1fr; gap: 36px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
