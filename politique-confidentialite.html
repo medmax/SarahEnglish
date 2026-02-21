@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — English With Sarah</title>
+<meta name="description" content="Politique de confidentialité et de protection des données personnelles (RGPD) du site English With Sarah.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink: #1a1a2e;
+  --cream: #f5f0e8;
+  --gold: #c9a84c;
+  --teal: #2d6a6a;
+  --teal-light: #3d8a8a;
+  --coral: #d4614a;
+  --sage: #6b8f71;
+  --pale: #f9f6f0;
+  --border: rgba(26,26,46,0.1);
+  --shadow: 0 4px 24px rgba(26,26,46,0.07);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at 85% 20%, rgba(201,168,76,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── HEADER ── */
+.page-header {
+  background: var(--ink);
+  padding: 72px 48px 56px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  bottom: -60px; left: -60px;
+  width: 350px; height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(45,106,106,0.14) 0%, transparent 65%);
+}
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: -50px; right: -30px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.09) 0%, transparent 65%);
+}
+
+.header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(245,240,232,0.5);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--gold); }
+.back-link svg { transition: transform 0.2s; }
+.back-link:hover svg { transform: translateX(-3px); }
+
+.page-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 44px);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.page-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.page-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: rgba(245,240,232,0.4);
+}
+.page-meta-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+/* ── CONTENT ── */
+.content-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 48px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sommaire */
+.toc {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 48px;
+  box-shadow: var(--shadow);
+}
+.toc-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.toc-list a {
+  font-size: 14px;
+  color: rgba(26,26,46,0.65);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+.toc-list a:hover { color: var(--teal); }
+.toc-list a::before { content: '→'; font-size: 12px; color: var(--gold); flex-shrink: 0; }
+
+/* Sections */
+.legal-section {
+  margin-bottom: 52px;
+  scroll-margin-top: 32px;
+}
+.legal-section:last-child { margin-bottom: 0; }
+
+.legal-section-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 1;
+  margin-bottom: -8px;
+}
+.legal-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(201,168,76,0.22);
+}
+
+.legal-text {
+  font-size: 15px;
+  color: rgba(26,26,46,0.68);
+  line-height: 1.78;
+  margin-bottom: 14px;
+}
+.legal-text strong { color: var(--ink); font-weight: 600; }
+.legal-text a { color: var(--teal); text-decoration: none; }
+.legal-text a:hover { text-decoration: underline; }
+
+.legal-block {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+.legal-block-label {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.legal-block p, .legal-block address {
+  font-size: 15px;
+  color: rgba(26,26,46,0.68);
+  line-height: 1.72;
+  font-style: normal;
+}
+.legal-block strong { color: var(--ink); font-weight: 600; }
+.legal-block a { color: var(--teal); text-decoration: none; }
+.legal-block a:hover { text-decoration: underline; }
+
+/* Table données */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+.data-table thead {
+  background: var(--ink);
+  color: var(--cream);
+}
+.data-table thead th {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.data-table thead th:first-child { color: var(--gold); }
+.data-table tbody tr { border-bottom: 1px solid var(--border); }
+.data-table tbody tr:last-child { border-bottom: none; }
+.data-table tbody tr:hover { background: var(--pale); }
+.data-table td {
+  padding: 14px 18px;
+  font-size: 14px;
+  color: rgba(26,26,46,0.68);
+  line-height: 1.55;
+  vertical-align: top;
+}
+.data-table td:first-child { font-weight: 600; color: var(--ink); }
+
+/* Droits */
+.rights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.right-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.right-card-icon { font-size: 22px; margin-bottom: 10px; }
+.right-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.right-card-desc { font-size: 13px; color: rgba(26,26,46,0.55); line-height: 1.55; }
+
+/* Alert note */
+.legal-note {
+  background: rgba(45,106,106,0.07);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: rgba(26,26,46,0.65);
+  line-height: 1.65;
+  margin-top: 14px;
+}
+.legal-note strong { color: var(--ink); }
+
+.legal-warn {
+  background: rgba(212,97,74,0.07);
+  border-left: 3px solid var(--coral);
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: rgba(26,26,46,0.65);
+  line-height: 1.65;
+  margin-top: 14px;
+}
+
+/* ── FOOTER ── */
+.page-footer {
+  background: var(--ink);
+  padding: 32px 48px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.page-footer a {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cream);
+  text-decoration: none;
+}
+.page-footer a span { color: var(--gold); }
+.page-footer p {
+  font-size: 12px;
+  color: rgba(245,240,232,0.28);
+  margin-top: 8px;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 56px 24px 44px; }
+  .content-wrap { padding: 48px 24px 64px; }
+  .page-footer { padding: 28px 24px; }
+  .rights-grid { grid-template-columns: 1fr; }
+  .data-table { font-size: 13px; }
+  .data-table td, .data-table th { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="header-inner">
+    <a href="index.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M10 7H4M6 4L3 7l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Retour à l'accueil
+    </a>
+    <p class="page-eyebrow">RGPD &amp; données personnelles</p>
+    <h1 class="page-title">Politique de confidentialité</h1>
+    <div class="page-meta">
+      <span class="page-meta-item"><span class="page-meta-dot"></span> Conforme au RGPD (UE 2016/679)</span>
+      <span class="page-meta-item"><span class="page-meta-dot"></span> Mise à jour : <span id="update-year"></span></span>
+    </div>
+  </div>
+</header>
+
+<main class="content-wrap">
+
+  <!-- Sommaire -->
+  <nav class="toc" aria-label="Sommaire">
+    <p class="toc-label">Sommaire</p>
+    <ul class="toc-list">
+      <li><a href="#responsable">Responsable du traitement</a></li>
+      <li><a href="#donnees">Données collectées</a></li>
+      <li><a href="#finalites">Finalités et bases légales</a></li>
+      <li><a href="#duree">Durée de conservation</a></li>
+      <li><a href="#destinataires">Destinataires</a></li>
+      <li><a href="#droits">Vos droits</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#contact-rgpd">Contact DPO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <p class="legal-text">
+    La présente politique de confidentialité décrit la manière dont <strong>English With Sarah</strong> collecte, utilise et protège vos données personnelles lorsque vous utilisez ce site web ou faites appel à nos services, conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la loi Informatique et Libertés modifiée.
+  </p>
+  <p class="legal-text">
+    Nous nous engageons à traiter vos données avec <strong>transparence, sécurité et respect</strong>. Nous ne collectons que les données strictement nécessaires aux finalités décrites ci-dessous.
+  </p>
+
+  <!-- 1. Responsable du traitement -->
+  <section class="legal-section" id="responsable">
+    <div class="legal-section-num">01</div>
+    <h2 class="legal-section-title">Responsable du traitement</h2>
+
+    <div class="legal-block">
+      <p class="legal-block-label">Identité</p>
+      <address>
+        <strong>English With Sarah</strong><br>
+        Représentée par : Sarah <strong>[À compléter — nom de famille]</strong><br>
+        Statut : Micro-entrepreneur<br>
+        Adresse : Colombes, 92700 Hauts-de-Seine, France<br>
+        Email : <a href="mailto:contact@englishwithsarah.fr">contact@englishwithsarah.fr</a>
+      </address>
+    </div>
+  </section>
+
+  <!-- 2. Données collectées -->
+  <section class="legal-section" id="donnees">
+    <div class="legal-section-num">02</div>
+    <h2 class="legal-section-title">Données collectées</h2>
+
+    <p class="legal-text">Nous collectons uniquement les données que vous nous transmettez volontairement :</p>
+
+    <table class="data-table" aria-label="Types de données collectées">
+      <thead>
+        <tr>
+          <th>Type de donnée</th>
+          <th>Modalité de collecte</th>
+          <th>Caractère obligatoire</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nom et prénom</td>
+          <td>Formulaire de contact, prise de rendez-vous</td>
+          <td>Obligatoire</td>
+        </tr>
+        <tr>
+          <td>Adresse e-mail</td>
+          <td>Formulaire de contact, newsletter</td>
+          <td>Obligatoire</td>
+        </tr>
+        <tr>
+          <td>Numéro de téléphone</td>
+          <td>Formulaire de contact, WhatsApp (enfants)</td>
+          <td>Optionnel</td>
+        </tr>
+        <tr>
+          <td>Informations professionnelles</td>
+          <td>Contexte professionnel renseigné lors du diagnostic</td>
+          <td>Optionnel</td>
+        </tr>
+        <tr>
+          <td>Données de navigation</td>
+          <td>Cookies analytics (si activés)</td>
+          <td>Optionnel</td>
+        </tr>
+        <tr>
+          <td>Messages échangés</td>
+          <td>Emails, formulaire de contact</td>
+          <td>Selon contenu</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legal-note">
+      <strong>Données sensibles :</strong> Nous ne collectons aucune donnée sensible au sens de l'article 9 du RGPD (santé, opinions politiques, religion, etc.).
+    </div>
+  </section>
+
+  <!-- 3. Finalités et bases légales -->
+  <section class="legal-section" id="finalites">
+    <div class="legal-section-num">03</div>
+    <h2 class="legal-section-title">Finalités et bases légales</h2>
+
+    <table class="data-table" aria-label="Finalités de traitement">
+      <thead>
+        <tr>
+          <th>Finalité</th>
+          <th>Base légale (RGPD art. 6)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Répondre à vos demandes de contact</td>
+          <td>Intérêt légitime (art. 6.1.f)</td>
+        </tr>
+        <tr>
+          <td>Gérer la relation client et les inscriptions aux cours</td>
+          <td>Exécution d'un contrat (art. 6.1.b)</td>
+        </tr>
+        <tr>
+          <td>Envoyer des informations sur nos offres (newsletter)</td>
+          <td>Consentement (art. 6.1.a)</td>
+        </tr>
+        <tr>
+          <td>Établir et conserver les documents comptables</td>
+          <td>Obligation légale (art. 6.1.c)</td>
+        </tr>
+        <tr>
+          <td>Améliorer le site et analyser l'audience</td>
+          <td>Consentement (art. 6.1.a)</td>
+        </tr>
+        <tr>
+          <td>Assurer la sécurité du site</td>
+          <td>Intérêt légitime (art. 6.1.f)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 4. Durée de conservation -->
+  <section class="legal-section" id="duree">
+    <div class="legal-section-num">04</div>
+    <h2 class="legal-section-title">Durée de conservation</h2>
+
+    <table class="data-table" aria-label="Durées de conservation des données">
+      <thead>
+        <tr>
+          <th>Catégorie de données</th>
+          <th>Durée de conservation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Données prospects (contact sans suite)</td>
+          <td>3 ans à compter du dernier contact</td>
+        </tr>
+        <tr>
+          <td>Données clients (élèves, entreprises)</td>
+          <td>5 ans après la fin de la relation commerciale</td>
+        </tr>
+        <tr>
+          <td>Documents comptables et factures</td>
+          <td>10 ans (obligation légale)</td>
+        </tr>
+        <tr>
+          <td>Données de navigation (cookies)</td>
+          <td>13 mois maximum</td>
+        </tr>
+        <tr>
+          <td>Emails de contact</td>
+          <td>3 ans à compter de la réception</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="legal-text">
+      À l'expiration de ces durées, vos données sont <strong>supprimées ou anonymisées</strong> de manière sécurisée.
+    </p>
+  </section>
+
+  <!-- 5. Destinataires -->
+  <section class="legal-section" id="destinataires">
+    <div class="legal-section-num">05</div>
+    <h2 class="legal-section-title">Destinataires des données</h2>
+
+    <p class="legal-text">
+      Vos données personnelles sont traitées par <strong>Sarah [À compléter]</strong> en tant que responsable du traitement. Elles peuvent également être transmises aux sous-traitants suivants dans le cadre de l'exploitation du site et des services :
+    </p>
+
+    <div class="legal-block">
+      <p class="legal-block-label">Sous-traitants éventuels</p>
+      <p>
+        <strong>Hébergeur du site</strong> : [À compléter]<br>
+        <strong>Outil de prise de rendez-vous</strong> : Calendly (Calendly LLC — États-Unis, couvert par les clauses contractuelles types de l'UE)<br>
+        <strong>Outil de visioconférence</strong> : Zoom (Zoom Video Communications — États-Unis, couvert par les clauses contractuelles types de l'UE)<br>
+        <strong>Messagerie</strong> : Google Workspace / WhatsApp (Meta) selon les échanges
+      </p>
+    </div>
+
+    <p class="legal-text">
+      Nous ne vendons, ne louons et ne transmettons <strong>jamais</strong> vos données personnelles à des tiers à des fins commerciales.
+    </p>
+    <p class="legal-text">
+      En cas de transfert hors Union Européenne (ex. : Calendly, Zoom), des garanties appropriées sont mises en place conformément aux articles 44 à 49 du RGPD (clauses contractuelles types ou décision d'adéquation).
+    </p>
+  </section>
+
+  <!-- 6. Vos droits -->
+  <section class="legal-section" id="droits">
+    <div class="legal-section-num">06</div>
+    <h2 class="legal-section-title">Vos droits</h2>
+
+    <p class="legal-text">
+      Conformément au RGPD (articles 15 à 22), vous disposez des droits suivants sur vos données personnelles :
+    </p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-card-icon">👁️</div>
+        <div class="right-card-name">Droit d'accès</div>
+        <div class="right-card-desc">Obtenir une copie de vos données personnelles détenues par English With Sarah.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">✏️</div>
+        <div class="right-card-name">Droit de rectification</div>
+        <div class="right-card-desc">Corriger des données inexactes ou incomplètes vous concernant.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🗑️</div>
+        <div class="right-card-name">Droit à l'effacement</div>
+        <div class="right-card-desc">Demander la suppression de vos données sous certaines conditions.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">⏸️</div>
+        <div class="right-card-name">Droit à la limitation</div>
+        <div class="right-card-desc">Suspendre temporairement l'utilisation de vos données.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">📦</div>
+        <div class="right-card-name">Droit à la portabilité</div>
+        <div class="right-card-desc">Recevoir vos données dans un format structuré et lisible par machine.</div>
+      </div>
+      <div class="right-card">
+        <div class="right-card-icon">🚫</div>
+        <div class="right-card-name">Droit d'opposition</div>
+        <div class="right-card-desc">Vous opposer au traitement de vos données, notamment à des fins de prospection.</div>
+      </div>
+    </div>
+
+    <p class="legal-text">
+      Pour exercer l'un de ces droits, contactez-nous à l'adresse : <a href="mailto:contact@englishwithsarah.fr"><strong>contact@englishwithsarah.fr</strong></a>. Nous nous engageons à répondre dans un délai d'<strong>un mois</strong> à compter de la réception de votre demande.
+    </p>
+    <p class="legal-text">
+      Vous avez également le droit d'introduire une réclamation auprès de l'autorité de contrôle compétente : la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) — <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.
+    </p>
+
+    <div class="legal-warn">
+      Pour les traitements basés sur votre <strong>consentement</strong> (newsletter, cookies analytics), vous pouvez retirer votre consentement à tout moment sans que cela remette en cause la licéité des traitements effectués avant ce retrait.
+    </div>
+  </section>
+
+  <!-- 7. Cookies -->
+  <section class="legal-section" id="cookies">
+    <div class="legal-section-num">07</div>
+    <h2 class="legal-section-title">Cookies et traceurs</h2>
+
+    <p class="legal-text">
+      Ce site peut utiliser des cookies — de petits fichiers texte déposés sur votre navigateur — pour améliorer votre expérience de navigation et analyser l'audience du site.
+    </p>
+
+    <div class="legal-block">
+      <p class="legal-block-label">Cookies strictement nécessaires</p>
+      <p>Ces cookies assurent le bon fonctionnement du site (session, préférences). Ils ne nécessitent pas votre consentement.</p>
+    </div>
+
+    <div class="legal-block">
+      <p class="legal-block-label">Cookies analytics (avec consentement)</p>
+      <p>Si vous l'acceptez, nous utilisons des outils d'analyse (type Google Analytics ou équivalent) pour comprendre comment les visiteurs utilisent notre site. Ces données sont anonymisées et agrégées.</p>
+    </div>
+
+    <p class="legal-text">
+      Vous pouvez à tout moment <strong>gérer, désactiver ou supprimer les cookies</strong> via les paramètres de votre navigateur. La désactivation de certains cookies peut affecter votre expérience sur le site.
+    </p>
+    <p class="legal-text">
+      Conformément aux recommandations de la CNIL, la durée maximale de conservation des cookies est de <strong>13 mois</strong>.
+    </p>
+  </section>
+
+  <!-- 8. Contact DPO -->
+  <section class="legal-section" id="contact-rgpd">
+    <div class="legal-section-num">08</div>
+    <h2 class="legal-section-title">Contact — Délégué à la protection des données</h2>
+
+    <p class="legal-text">
+      Pour toute question relative à la présente politique de confidentialité ou à l'exercice de vos droits, vous pouvez contacter notre référent protection des données :
+    </p>
+
+    <div class="legal-block">
+      <p class="legal-block-label">Référent protection des données (DPO)</p>
+      <address>
+        <strong>Sarah [À compléter — nom de famille]</strong><br>
+        English With Sarah<br>
+        Colombes, 92700 Hauts-de-Seine<br>
+        Email : <a href="mailto:contact@englishwithsarah.fr">contact@englishwithsarah.fr</a><br>
+        Délai de réponse : 30 jours maximum
+      </address>
+    </div>
+
+    <p class="legal-text">
+      La présente politique peut être mise à jour ponctuellement pour refléter les évolutions légales ou les changements dans nos pratiques. Nous vous invitons à la consulter régulièrement. En cas de modification substantielle, une notification sera publiée sur notre site.
+    </p>
+    <p class="legal-text">
+      Pour en savoir plus sur vos droits, rendez-vous sur le site de la CNIL : <a href="https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles" target="_blank" rel="noopener noreferrer">cnil.fr</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <a href="index.html"><span>English</span> With Sarah</a>
+  <p>© <span id="yr"></span> English With Sarah — Colombes, Hauts-de-Seine 92</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
